@@ -1,0 +1,16 @@
+[
+    {
+      "NotificationTypeKey": "ListOfBooksRead",
+      "NotificationTypeVersion": "1",
+      "Templates": [
+        {
+          "Language": "en",
+          "TemplatePublic": "List of Books Read",
+          "TemplateSensitive": "Book '{{title}}' Read",
+          "TemplateGrouped": "Book Read",
+          "TemplateLanguage": "mustache",
+          "Subtitle": "Book record '{{title}}' read by {{user}}."
+        }
+      ]
+    }
+  ]

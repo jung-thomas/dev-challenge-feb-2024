@@ -1,0 +1,42 @@
+{
+  "name": "dev-challenge-feb-2024",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js-community/odata-v2-adapter": "^1.12.5",
+    "@cap-js/audit-logging": "^0.6.0",
+    "@cap-js/change-tracking": "^1.0.5",
+    "@cap-js/graphql": "^0.10.0",
+    "@cap-js/notifications": "^0.1.0",
+    "@cap-js/telemetry": "^0.0.4",
+    "@sap/cds": "^7",
+    "@sap/cds-common-content": "^1.3.1",
+    "express": "^4",
+    "@sap/cds-hana": "^2"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
+    "cds-plugin-ui5": "^0.8.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch": "cds watch --profile hybrid",
+    "deploy": "cds deploy --to hana:dev-challenge-feb-2024 --auto-undeploy"
+  },
+  "cds": {
+    "cdsc": {
+      "docs": true,
+      "docComment": true
+    },
+    "cov2ap": {
+      "path": "devchallenge/v2"
+    },
+    "requires": {
+      "db": "hana"
+    }
+  }
+}

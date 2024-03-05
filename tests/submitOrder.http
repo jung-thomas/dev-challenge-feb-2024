@@ -1,0 +1,5 @@
+POST http://localhost:4004/odata/v4/catalog/submitOrder
+Content-Type: application/json;IEEE754Compatible=true
+Authorization: Basic alice:
+
+{ "book":201, "quantity":5 }
